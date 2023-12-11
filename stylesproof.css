@@ -1,0 +1,168 @@
+body {
+    position: relative;
+    display: inline-block;
+}
+
+body img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+    
+.topcontainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;  
+    width: 1000px; 
+    height: 400px; 
+    margin-left: 80px; 
+    position: absolute;
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.leftcontainer {
+    width: 500px;
+    height: 400px; 
+}
+
+h1 {
+    color: hsl(300, 43%, 22%);
+    font-size: 50px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+p {
+    color: hsl(303, 10%, 53%);
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 50px; 
+}
+
+.rightcontainer {
+    display: grid; 
+    grid-template-columns: repeat(3); 
+    width: 500px; 
+    height: 400px; 
+    margin-top: 300px;
+    margin-left: 90px;
+}
+
+.firstrating, .secondrating, .thirdrating {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(300, 24%, 96%);
+    width: 400px; 
+    height: 50px;  
+}
+
+.secondrating {
+    margin-left: 40px;
+    margin-top: -100px;
+}
+
+.thirdrating {
+    margin-left: 80px;
+    margin-top: -150px; 
+}
+
+h6 {
+    font-size: 15px;
+    color: hsl(300, 43%, 22%);
+}
+
+.star {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 20px; 
+    height: 20px;  
+    margin-right: 10px;  
+}
+
+.bottomcontainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-left: 140px;
+    width: 1000px; 
+    height: 400px;  
+    margin-bottom: 40px;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.firstbuyer, .secondbuyer, .thirdbuyer {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    width: 360px;
+    height: 250px; 
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    margin-left: 12px; 
+}
+
+.colton, .Irene, .Anne {
+    margin-top: 20px;
+    margin-left: 20px; 
+    border-radius: 50%;
+    width: 50px; 
+    height: 50px; 
+}
+
+.name {
+    position: absolute;
+    margin-left: 90px;
+    margin-top: 10px; 
+    color: white; 
+    font-size: 15px;
+}
+
+.title {
+    position: absolute;
+    color: hsl(333, 80%, 67%);
+    font-size: 15px; 
+    margin-left: 90px; 
+    margin-top: 30px; 
+}
+
+.review {
+    color: white; 
+    font-size: 20px; 
+    width: 300px; 
+    height: 100px; 
+    margin-top: 80px; 
+    margin-left: -25px;
+    padding-right: 25px; 
+}
+
+.secondbuyer {
+    margin-top: 80px;  
+}
+
+.thirdbuyer {
+    margin-top: 180px; 
+}
+
+@media (max-width: 375px) {
+    .rightcontainer {
+        display: grid;
+        grid-template-columns: repeat(3);
+        margin: 10px; 
+    }
+    .bottomcontainer {
+        display: grid;
+        grid-template-columns: repeat(3);
+        margin: 10px; 
+    }
+}
+    
+
